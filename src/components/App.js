@@ -6,7 +6,7 @@ const App = () => {
     <div id="main">
       <ol key="relativeList">
         {data.map((item, index) => (
-          <li key={`relativeListItem${index + 1}`}>{item}</li>
+          <li key={`relativeListItem${index + 1}`} id={`relativeListItem${index + 1}`}>{item}</li>
         ))}
       </ol>
     </div>
