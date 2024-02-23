@@ -1,16 +1,16 @@
-import React from 'react'
+import React from 'react';
 
 const App = () => {
+  const data = ["Abhi", "Lingala", "Kumar"];
   return (
     <div id="main">
-               {/* Do not remove the main div */}
-               <ol key='relativeList'>
-                <li key='relativeListItem1'> relativeListItem1</li>
-                <li key='relativeListItem2'> relativeListItem2</li>
-                <li key='relativeListItem3'> relativeListItem3</li>
-               </ol>
+      <ol key="relativeList">
+        {data.map((item, index) => (
+          <li key={`relativeListItem${index + 1}`}>{item}</li>
+        ))}
+      </ol>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
